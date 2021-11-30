@@ -1,0 +1,22 @@
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: -90px;
+    display: flex;
+    align-items: center;
+    color: $gris;
+    transform: rotate(-90deg);
+    span{
+        font-family: $font-text;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .linksNav{
+        margin: 0 20px;
+        a{
+            margin: 0 5px;
+            color: $gris;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.button-menu{
+    font-size: 50px;
+    transform: rotate(90deg);
+    transition: color 0.3s ease-in-out;
+    color: $rouge;
+    &:hover{
+        color: $rouge-hover;
+    }
+}

@@ -1,10 +1,10 @@
-.primary-boutton{
+.primary-button{
     align-items: center;
     padding: 12px 26px;
-    background-color:var(--rouge);
-    color: var(--blanc);
+    background-color: $rouge;
+    color: $blanc;
     border-radius: 5px;
-    font-family: var(--fontTexte);
+    font-family: $font-text;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;

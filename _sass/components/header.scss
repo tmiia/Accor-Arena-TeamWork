@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 70vh;
+    margin-bottom: $margin-desktop;
+    h1{
+        font-family: $font-titre;
+        font-size: 20px;
+        line-height: 120%;
+        color: $bleu;
+        font-weight: 300;
+    }
+    h2{
+        font-family: $font-text;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $bleu;
+        margin: 15px 0 60px;
+    }
+    #logo{
+        z-index: 1000;
+        position: fixed;
+    }
+    .logo{
+        top: 40px;
+        width: 100px;
+        transition: 0.25s ease-in-out;
+    }
+    .scrolled{
+        top: 20px;
+        width: 50px;
+        transition: 0.25s ease-in-out;
+    }
+}

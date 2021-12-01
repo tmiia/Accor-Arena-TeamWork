@@ -1,0 +1,10 @@
+<div class="cats-tabs">
+    {% for tabs in site.data.categories.categories_button.list_1  %}
+        <div class="tab-btn">
+            <button class="tab-cats" onclick="openTab(event, '{{ tabs.type }}' )">
+                <img src="{{tabs.link}}"/>
+            </button>
+            <span>{{ tabs.type }}</span>
+        </div>
+    {% endfor %}
+</div>

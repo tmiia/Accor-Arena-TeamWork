@@ -1,0 +1,127 @@
+.categories {
+    margin: 120px;
+    .cats-tabs {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+            margin-bottom: $margin-mobile;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: $font-text;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 60px;
+            letter-spacing: 1px;
+            font-size: 12px;
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                height: 50px;
+                width: 50px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease-in-out;
+                border-radius: 100%;
+                cursor: pointer;
+                margin-bottom: 10px;
+                img {
+                    width: 60%;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .active {
+                transform: scale(1.2);
+            }
+            &:first-child {
+                button {background-color: $tab1}
+            }
+            &:nth-child(2) {
+                button {background-color: $tab2;}
+            }
+            &:nth-child(3) {
+                button {background-color: $tab3;}
+            }
+            &:nth-child(4) {
+                button {background-color: $tab4;}
+            }
+            &:nth-child(5) {
+                button {background-color: $tab5;}
+            }
+            &:nth-child(6) {
+                button {background-color: $tab6;}
+            }
+        }
+    }
+    .tab-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;   
+        position: relative;
+        border-radius: 5px;
+        color: $blanc;
+        height: 312px;
+        background-size: cover;
+        background-position: center;
+        &::before {
+            content:"";
+            position: absolute;
+            top:0; bottom:0;
+            left:0; right: 0;
+            border-radius: 5px;
+            background: $gradient-shadow;
+            z-index: 1;
+        }
+        h6 {
+            font-family: $font-titre;
+            z-index: 3;
+            position:relative;
+            font-size: 36px;
+            font-weight: normal;
+            margin: $margin-mobile $margin-mobile 30px;
+            letter-spacing: 1.5px;
+        }
+        p {
+            font-family: $font-text;
+            margin: 0 $margin-mobile $margin-mobile;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            z-index: 3;
+            position:relative;
+            max-width: calc(50% + 15px);
+        }
+        a {
+            z-index: 3;
+            position: absolute;
+            bottom: -20px;
+            right: $margin-mobile;
+        }
+    }
+    #classique {
+        background-image: url('/assets/media/bann_classic.webp');
+    }
+    #rap {
+        background-image: url('/assets/media/bann_rap.jfif');
+    }
+    #rock {
+        background-image: url('/assets/media/bann_rock.webp');
+    }
+    #jazz {
+        background-image: url('/assets/media/bann_jazz.webp');
+        background-position: top;
+    }
+    #folk {
+        background-image: url('/assets/media/bann_folk.jpg');
+    }
+    #pop {
+        background-image: url('/assets/media/bann_pop.webp');
+        background-position: 30% 50%;
+    }
+}

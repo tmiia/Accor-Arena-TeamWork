@@ -1,0 +1,20 @@
+categories_button:
+  list_1:
+      - link: /assets/media/tab_classique.png
+        type: classique
+        text: Qu'est-ce que c'est, la musique classique? Pas si simple à dire. Si ce genre musical prend forme dès le Moyen-Âge, plusieurs courants le définissent. En passant par le Baroque, puis le Classique et finalement le Romantisme, les oeuvres musicales qui découlent de ses époques sont toujours interprétées par les plus grands orchestres du monde. La musique classique, c'est surtout la musique historique de l'Occident.
+      - link: /assets/media/tab_rap.png
+        type: rap
+        text: Un flow de rimes cinglantes pour des messages percutants ! Ou tout simplement une belle histoire énoncée tel un discours sur des airs variés. Le rap est l’ingrédient principal de la musique urbaine et de la culture moderne.<br/><br/>Aujourd’hui, la France est considérée comme le deuxième paradis du rap derrière les États Unis. Un titre prestigieux qui est porté par le talent de nos artistes et leur capacité à écouler des disques appréciés sur le marché international.
+      - link: /assets/media/tab_rock.png
+        type: rock
+        text: Les États-Unis sont le berceau du « rock and roll ». Ce genre populaire est la révolution culturelle des années 40. Il s’inspire fortement du jazz, du blues et de la musique country.<br/><br/>Nous avons tendance à réduire le rock à une simple formation concentrée sur la guitare électrique, la basse, la batterie et un chanteur (charismatique). Mais comme beaucoup de styles de musique, c’est un mode de vie. Un furieux mélange entre une histoire d’amour qui finit mal et une lutte sans merci pour la paix dans le monde. Engagé politiquement et personnellement dans son art, l’artiste rock est un monument pour sa génération.
+      - link: /assets/media/tab_jazz.png
+        type: jazz
+        text: La musique classique de l'Amérique ! Des notes de swing et blues, des voix d'appel et de réponse, des polyrythmies, et bien sûr, de l'improvisation ; ce fabuleux cocktail est une petite histoire des États-Unis. Remercions encore et toujours la communauté afro-américaine pour cette contribution immortelle à l’univers de la musique.<br/><br/>De 1920 à 1933, la prohibition aux États-Unis interdisait la vente de boissons alcoolisées entraînant des clandestins à développer une activité nocturne illicite. Pour l’ambiance, ils pouvaient compter sur les chaleureuses trompettes, saxophones et autres cuivres, sans oublier leurs amis à cordes, la guitare et la contrebasse.
+      - link: /assets/media/tab_folk.png
+        type: folk
+        text: La musique folklorique c’est la musique traditionnelle ! Le genre traverse un renouveau au 20e siècle. La folk est devenue le véritable synonyme d’une guitare dans des mains d’orfèvre. Voisine de la musique du monde, c’est la symphonie des voyageurs. Elle s'écoute en solo sur la route comme en balade lors de nos événements les plus intimes. C’est aussi le refuge des indépendants et des inconnus, ce qui en fait une petite oasis de perles musicales.
+      - link: /assets/media/tab_pop.png
+        type: pop
+        text: Encore une fois, remercions nos amis anglo-saxons pour cette merveille. Le style est aujourd’hui le plus populaire à l'échelle mondiale. Au sommet des charts, le mouvement est porté par des titans de l’industrie musicale confortablement installés sur le trône !<br/><br/>Si musique pop est souvent confondu avec l’expression musique populaire, c’est avant tout la petite sœur du rock qui prend son envol dans les années 60. Elle a déménagé dans les paysages plus urbains pour flirter avec les sonorités latines. Son objectif, nous faire danser !

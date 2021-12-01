@@ -1,0 +1,12 @@
+<div class="categories">
+
+    {% include components/tabs.html %}
+    
+    {% for tabs in site.data.categories.categories_button.list_1  %}
+    <div id="{{tabs.type}}" class="tab-content">
+        <h6>{{tabs.type}}</h6>
+        <p>{{tabs.text}}</p>
+        {% include components/primary-button.html text= 'Décrouvrez tous nos évènements' %}
+    </div>
+    {% endfor %}
+</div>

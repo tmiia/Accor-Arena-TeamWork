@@ -1,0 +1,29 @@
+.global{
+    display: flex;
+    justify-content: center;
+
+
+.button-artiste{
+      width: 1144px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 120px;
+
+    .butt{
+     display: inline-block;
+
+    .icone-cercle{
+        background-color: $gris;
+        height: 80px;   
+        width: 80px;
+        border-radius: 50%;
+
+            &:hover{
+                background-color: rgb(168, 168, 168);
+
+                   }
+               }
+         }
+
+}
+}

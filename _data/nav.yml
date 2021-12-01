@@ -1,0 +1,34 @@
+
+footer:
+  list_1:
+      - link: index.html
+        text: Accueil
+      - link: https://www.accorarena.com/fr/le-faubourg
+        text: Quartier faubourg
+      - link: programmation.html
+        text: Programmation
+      - link: https://www.accorarena.com/fr/offstage
+        text: Archives
+      - link: https://www.accorarena.com/fr/accor-arena
+        text: L'accord Arena
+      - link: #
+        text: Contact
+      - link: https://www.accorarena.com/fr/arena-for-business
+        text: Arena for Business
+  list_2:
+      - link: #
+        text: politique de confidentialité
+      - link: #
+        text: politique de cookies
+      - link: #
+        text: mentions légales
+      - link: #
+        text: conditions d’utilisation
+      - link: #
+        text: contactez-nous
+      - link: #
+        text: FAQ
+      - link: #
+        text: CGU
+      - link: #
+        text: GGV

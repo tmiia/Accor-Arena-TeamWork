@@ -1,0 +1,79 @@
+<div class="categories">
+    
+    <div class="cateTabs">
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'Tokyo')" id="tabOpen">
+                <img src="../assets/media/tab_classique.png"/>
+            </button>
+            <span>Classique</span>
+        </div>
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'rap')">
+                <img src="../assets/media/tab_rap.png"/>
+            </button>
+            <span>Rap</span>
+        </div>
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'rock')">
+                <img src="../assets/media/tab_rock.png"/>
+            </button>
+            <span>Rock</span>
+        </div>
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'jazz')">
+                <img src="../assets/media/tab_jazz.png"/>
+            </button>
+            <span>Jazz</span>
+        </div>
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'folk')">
+                <img src="../assets/media/tab_folk.png"/>
+            </button>
+            <span>Folk</span>
+        </div>
+        <div class="tabBtn">
+            <button class="tabCates" onclick="openTab(event, 'pop')">
+                <img src="../assets/media/tab_pop.png"/>
+            </button>
+            <span>Pop</span>
+        </div>
+    </div>
+    
+    <div id="classique" class="tabContent">
+        <h6>Classique</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div> 
+
+    <div id="rap" class="tabContent">
+        <h6>Rap</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div>
+  
+    <div id="rock" class="tabContent">
+        <h6>Rock</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div>
+    
+    <div id="jazz" class="tabContent">
+        <h6>Jazz'Arena</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div>
+    
+    <div id="folk" class="tabContent">
+        <h6>Folk</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div>
+    
+    <div id="pop" class="tabContent">
+        <h6>Pop</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laboriosam exercitationem minus sed necessitatibus suscipit numquam, ullam deserunt accusamus dolorum, nobis, facilis inventore ab ut voluptatem ducimus enim dicta? Quibusdam.</p>
+        {% include_relative primary-button.html %}
+    </div>
+</div>
+  <script src="../assets/JS/tabs.js"></script>
+  

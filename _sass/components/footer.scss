@@ -1,0 +1,101 @@
+footer {
+    background-color: $noir;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-end;
+    &::after {
+        content:"";
+        height: 259px;
+        width: 308px;
+        background-image: url('./Assets/SVG/shape_2.svg');
+        position: absolute;
+        bottom:0;
+        left:5%;
+    }
+    .footer-infos {
+        width: calc(100% - $margin-desktop);
+        display:flex;
+        color: $blanc;
+        font-family: $font-text;
+        text-transform: uppercase;
+        margin: $margin-mobile;
+        font-size: 14px;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        p {
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 20px;
+            margin: $margin-mobile $margin-mobile $margin-mobile 45px;
+            position: relative;
+            &::after {
+                content:"\f3be";
+                font-family: "Font Awesome\ 5 Free";
+                position: absolute;
+                transform: rotate(90deg);
+                top: 30px;
+                left: 0;
+            }
+        }
+        .footer-section {
+            margin: $margin-mobile;
+            display: flex;
+            flex-direction: column;
+            h5 {
+                color: $rouge;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 20px;
+                white-space: nowrap;
+            }
+            a {
+                white-space: nowrap;
+                color: $blanc;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .footer-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin:$margin-mobile $margin-desktop;
+        span {
+            color: $blanc;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-family: $font-text;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        form {
+            display:flex;
+            input#newsletter {
+                background-color: rgba(206,208,206, .12);
+                border: 1px solid $blanc;
+                padding: 10px;
+                border-radius: 5px;
+                font-family: $font-text;
+                margin-right: 40px;
+                width: 390px;
+                color: $blanc;
+            }
+            #news-submit {
+                outline: none;
+                border:none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 12px;
+            }
+        }
+    }
+    .footer-credits{
+        align-self: center;
+        color: $gris;
+    }
+}

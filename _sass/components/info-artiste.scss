@@ -21,6 +21,7 @@
  
        
        .encare-text{
+           position: relative;
         color: honeydew;
         position: absolute;
         background-color: $noire-opac;
@@ -31,7 +32,8 @@
         left: 35px; 
 
         .txt{
-            
+            margin: 50px;
+
         }
 
         .date-button{
@@ -45,7 +47,7 @@
            font-family: $font-text;
            text-transform: uppercase;
            text-align: center;
-           font-size: 24px;
+           font-size: 20px;
            font-weight: bolder;
            letter-spacing: 4%;
            transition: background-color .3s ease-in-out;

@@ -10,20 +10,59 @@
       margin-bottom: 120px;
 
     .butt{
-     display: inline-block;
+        display: flex;
+        align-items: flex-start;
+        
 
-    .icone-cercle{
+    .icone-cercle1{
         background-color: $gris;
         height: 80px;   
         width: 80px;
         border-radius: 50%;
+        margin-right: 30px;
 
             &:hover{
                 background-color: rgb(168, 168, 168);
 
                    }
-               }
-         }
+                }          
 
-}
-}
+                   .icone-cercle2{
+                    background-color: $gris;
+                    height: 80px;   
+                    width: 80px;
+                    border-radius: 50%;
+                    margin-right: 30px;
+            
+                        &:hover{
+                            background-color: rgb(168, 168, 168);
+            
+                               }          
+                                  }
+                               }          
+
+         .reserv-button{
+             margin-top: 20px;
+             margin-left: 1022px;
+            position: absolute;
+            padding: 10px 20px;
+            background-color: $rouge;
+            color: $blanc;
+            border-radius: 5px;
+            font-family: $font-text;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 4%;
+            transition: background-color .3s ease-in-out;
+        }
+        .reserv-button:hover{
+            color: $blanc;
+            background-color: $rouge-hover;
+        }         
+ 
+}          
+}          
+
+         
+

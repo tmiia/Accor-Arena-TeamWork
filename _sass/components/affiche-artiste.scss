@@ -27,6 +27,7 @@
               font-family: $font-text;
               text-transform: uppercase;
               text-align: center;
+              // font-weight: bolder;
               font-size: 28px;
               font-style: bolder;
               letter-spacing: 4%;
@@ -38,7 +39,11 @@
                 color: $blanc;
                 background-color: $rouge-hover;
               }
+          
 
+          .img-bannière-tryo{
+            border-radius: 5px;
+          }
           }
     }
 

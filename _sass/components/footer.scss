@@ -10,7 +10,7 @@ footer {
         content:"";
         height: 259px;
         width: 308px;
-        background-image: url('./Assets/SVG/shape_2.svg');
+        background-image: url('/assets/media/shape_2.svg');
         position: absolute;
         bottom:0;
         left:5%;
@@ -32,13 +32,14 @@ footer {
             font-size: 20px;
             margin: $margin-mobile $margin-mobile $margin-mobile 45px;
             position: relative;
-            &::after {
-                content:"\f3be";
-                font-family: "Font Awesome\ 5 Free";
+            i{
+                content:"\f10d";
+                font-family: "Font Awesome 5 Free";
                 position: absolute;
                 transform: rotate(90deg);
                 top: 30px;
                 left: 0;
+                
             }
         }
         .footer-section {

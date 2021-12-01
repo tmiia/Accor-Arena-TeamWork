@@ -88,7 +88,7 @@
         background-color: $bleu;
         transform: translateX(100%);
         transition: 0.3s ease-in-out;
-        &.openSlide{
+        &.open-slide{
             transform: translateX(0%)
         }
         form{

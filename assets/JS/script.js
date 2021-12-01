@@ -11,12 +11,15 @@ window.addEventListener("scroll", function(){
 
 let reservBtn = document.querySelector("#btn-reserver");
 reservBtn.addEventListener("click", function(){
+    console.log('open')
     let slide = document.querySelector("#slide");
     slide.classList.add("open-slide")
 })
 
 let closeReservBtn = document.querySelector("#btn-close-rsv");
 closeReservBtn.addEventListener("click", function(){
+    console.log('close')
+
     let slide = document.querySelector("#slide");
     slide.classList.remove("open-slide")
 })

@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+.affiche{
+     display: flex;
+     margin-bottom: 120px;
+     justify-content: center;
+    
+     .encare{
+      position: relative;
+      align-items: center;
+      
+            .button-artiste{
+              position: absolute;
+              top: 370px;
+              left: 150px;
+              
+              padding: 20px 105px;
+              background-color: $rouge;
+              color: $blanc;
+              border-radius: 5px;
+              font-family: $font-text;
+              text-transform: uppercase;
+              text-align: center;
+              font-size: 28px;
+              font-style: bolder;
+              letter-spacing: 4%;
+              transition: background-color .3s ease-in-out;
+
+              }
+
+              .button-artiste:hover{
+                color: $blanc;
+                background-color: $rouge-hover;
+              }
+
+          }
+    }
+
+
+

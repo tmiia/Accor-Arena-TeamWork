@@ -6,7 +6,8 @@
     <div id="{{tabs.type}}" class="tab-content">
         <h6>{{tabs.type}}</h6>
         <p>{{tabs.text}}</p>
-        {% include components/primary-button.html text= 'Décrouvrez tous nos évènements' %}
+        {% assign button_text = tabs.type | prepend: "Découvrez tous nos événements " %}
+        {% include components/primary-button.html text=button_text  %}
     </div>
     {% endfor %}
 </div>

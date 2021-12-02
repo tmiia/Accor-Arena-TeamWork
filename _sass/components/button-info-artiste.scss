@@ -1,79 +1,53 @@
-.global{
+.sect-button-artiste{
     display: flex;
-    justify-content: center;
-    margin: 120px;
+    justify-content: space-between;
+    margin: 0 120px 120px 120px;
 
-
-.button-artiste{
-      width: 1144px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 200px;
     .butt{
         display: flex;
-        align-items: flex-start;
-        
 
-    .icone-cercle1{
-        background-color: $gris;
-        height: 80px;   
-        width: 80px;
-        border-radius: 50%;
-        margin-right: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $rouge;
-        font-size: 40px;
-        &:hover{
-            background-color: rgb(168, 168, 168);
-
-              }
-                   
-                }          
-
-                   .icone-cercle2{
-                       position: relative;
-                    background-color: $gris;
-                    height: 80px;   
-                    width: 80px;
-                    border-radius: 50%;
-                    margin-right: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $rouge;
-                    font-size: 40px;
-            
-                        &:hover{
-                            background-color: rgb(168, 168, 168);
-            
-                               }          
-                                  }
-                               }          
-
-         .reserv-button{
-             margin-top: 20px;
-             margin-left: 985px;
-            position: absolute;
-            padding: 20px 40px;
-            background-color: $rouge;
-            color: $blanc;
-            border-radius: 5px;
-            font-family: $font-text;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bolder;
-            letter-spacing: 4%;
-            transition: background-color .3s ease-in-out;
+        .icone-cercle{
+            background-color: $gris;
+            height: 60px;   
+            width: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $rouge;
+            font-size: 25px;
+            &:hover{
+                background-color: rgb(168, 168, 168);
+    
+            }
+            &:first-child{
+                margin-right: 20px;
+            }
         }
-        .reserv-button:hover{
-            color: $blanc;
-            background-color: $rouge-hover;
-        }         
- 
-}          
+
+        .reserv-button{
+            margin-top: 20px;
+            margin-left: 985px;
+           position: absolute;
+           padding: 20px 40px;
+           background-color: $rouge;
+           color: $blanc;
+           border-radius: 5px;
+           font-family: $font-text;
+           text-transform: uppercase;
+           text-align: center;
+           font-size: 16px;
+           font-weight: bolder;
+           letter-spacing: 4%;
+           transition: background-color .3s ease-in-out;
+           
+           &:hover{
+           color: $blanc;
+           background-color: $rouge-hover;
+           }
+       }   
+    }   
+
 }          
 
          

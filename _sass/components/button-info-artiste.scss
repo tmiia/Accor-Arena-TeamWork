@@ -1,62 +1,76 @@
-
-
-
-
-
-.sect-button-artiste{
+.artist-options {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 120px 120px 120px;
-    width: 1144px;
-    
+    margin: $margin-desktop;
 
-    .butt{
+    .artist-btns {
         display: flex;
-        
+        align-items: center;
+        flex:1;
 
-        .icone-cercle{
+        a.return, .share {
+            width: 55px;
+            height: 55px;
+            overflow: hidden;
             background-color: $gris;
-            height: 60px;   
-            width: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border-radius: 100%;
             color: $rouge;
-            font-size: 25px;
-            &:hover{
-                background-color: rgb(168, 168, 168);
-    
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: .3s ease-in-out;
+        }
+        .share {
+            justify-content: flex-start;
+
+            .open {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 55px;
+                width: 55px;
+                position:absolute;
+                background-color: $gris;
+                z-index: 3;
+                right: 0;
             }
-            &:first-child{
-                margin-right: 20px;
+            span.open::before {
+                font-family: "Font Awesome\ 5 Free";
+                content: "\f1e0";       
+                font-weight: 900;
+            }
+            a {
+                left: 100%;
+                transition: .3s ease-in-out;
+                color: #fff;
+                font-size: 20px;
+                margin-left: 20px;
             }
         }
+        .share.opened {
+            width: 170px;
+            border-radius: 35px;
+            transition: .3s ease-in-out;
+            padding-right: 55px;
 
-    }   
-    .reserv-button{
-        margin-top: 20px;
-        margin-left: 985px;
-       position: absolute;
-       padding: 10px 20px;
-       background-color: $rouge;
-       color: $blanc;
-       border-radius: 5px;
-       font-family: $font-text;
-       text-transform: uppercase;
-       text-align: center;
-       font-size: 16px;
-       font-weight: bolder;
-       letter-spacing: 4%;
-       transition: background-color .3s ease-in-out;
-       
-       &:hover{
-       color: $blanc;
-       background-color: $rouge-hover;
-       }
+            .open::before {
+                content: "\f00d";  
+            }
+        }
+        a.return:hover, .share .open:hover, .share a:hover {
+            color: $rouge-hover;
+            transition: .3s ease-in-out;
+        }
     }
-             
+    a.primary-button {
+        font-family: $font-titre;
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 10px 30px;
+    }
 }   
-    
-
-

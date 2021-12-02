@@ -1,14 +1,12 @@
-
-
-<section class="sect-button-artiste">
-
-
-    <div class="butt">
-        <a href="#" class="icone-cercle"><i class="fas fa-arrow-left"></i></a>
-        <a href="#" class="icone-cercle"><i class="fas fa-share-alt"></i></a>
+<section class="artist-options">
+    <div class="artist-btns">
+        <a href="#" class="return" title="retour à la programmation"><i class="fas fa-chevron-left"></i></a>
+        <div class="share" id="btn-share">
+            <span class="open" onclick="toggleBtn()"></span>
+            <a href="https://www.facebook.com/AccorArena/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/accor_arena?lang=fr"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-link"></i></a>                
+        </div>
     </div>
-
-    <a href="#" class="reserv-button">Réserver</a>
-
-
+    {% include components/primary-button.html text="Réserver" %}
 </section>

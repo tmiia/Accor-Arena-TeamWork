@@ -1,17 +1,11 @@
 .affiche{
-     display: flex;
-     justify-content: center;
-     align-items: center;
      margin: 0 120px 120px 120px;
-     
-     .encare{
        position: relative;
-       width: 1144px;
-       height: 300px;
+       height: 419px;
        background-image: url(/assets/media/tryo-banniére.jpg);
        background-size: 100%;
        background-repeat: no-repeat;
-      }
+       border-radius: 5px;
 
        .button-artiste{
         position: absolute;

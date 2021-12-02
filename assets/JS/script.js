@@ -109,3 +109,11 @@ let btn_close = document.querySelector("#btn-close");
 btn_close.addEventListener("click", function(){
     menu.classList.remove("opened")
 })
+
+
+// BOUTON PARTAGE SUR PAGE ARTISTE
+
+function toggleBtn() {
+    var element = document.getElementById("btn-share");
+    element.classList.toggle("opened"); 
+}

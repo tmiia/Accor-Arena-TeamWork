@@ -1,0 +1,58 @@
+.actualité {
+    background-color: $blanc; 
+    max-width: 240px ;
+    border-radius: 5px;
+}
+
+.img-actualité {
+    width: 240px;
+    border-radius: 5px;
+    height: 150px;
+
+}
+
+.texte-actualité {
+    width: 240px;
+    text-align: left;
+    font-family: $-fonttexte;
+    color: $bleu;
+    
+  }
+
+.titre-actu{
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: $-fonttitre;
+    color: $bleu;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase ;
+}
+.explication-actu{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 140px;
+    font-size: 14px;;
+    color: $bleu;
+    font-family: $--fonttexte;
+}
+
+
+.primary-boutton{
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 12px 26px;
+    background-color: $rouge;
+    color: $blanc;
+    border-radius: 5px;
+    font-family: $--fonttexte;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.primary-boutton:hover{
+    background-color: $rouge-hover;
+}

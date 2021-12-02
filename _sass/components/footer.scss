@@ -1,6 +1,6 @@
 footer {
     background-color: $noir;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,12 +16,12 @@ footer {
         left:5%;
     }
     .footer-infos {
-        width: calc(100% - 120px);
+        width: calc(100% - 140px);
         display:flex;
         color: $blanc;
         font-family: $font-text;
         text-transform: uppercase;
-        margin: $margin-mobile;
+        margin: $margin-mobile $margin-mobile 0;
         font-size: 14px;
         justify-content: space-between;
         letter-spacing: 1px;
@@ -97,5 +97,102 @@ footer {
     .footer-credits{
         align-self: center;
         color: $gris;
+        margin-bottom: $margin-mobile;
     }
 }
+
+@media (max-width: 1200px) {
+    footer {
+        .footer-infos {
+            .footer-section h5 {
+                white-space: normal;
+            }
+            .footer-section a {
+                white-space: normal;
+            }
+        }
+    }
+
+  }
+@media (max-width: 1000px) {
+    footer {
+        &::after {
+            height: 200px;
+            width: 244px;
+        }
+        .footer-infos {
+            width: calc(100% - 180px);
+            flex-wrap: wrap;
+            .footer-section {
+                width: 33%;
+            }
+            .footer-section:nth-child(3) {
+                margin-top: 0;
+            }
+            .footer-section:nth-child(4) {
+                margin-top: 0;
+            }
+        }
+        .footer-newsletter {
+            margin: 0 120px 60px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    footer {
+        .footer-infos {
+            .footer-section {
+                margin: 60px 30px;
+            }
+        }
+        &::after {
+            height: 130px;
+            width: 158px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    footer {
+        .footer-infos {
+            h6 {
+                display: none;
+            }
+            .footer-section:nth-child(3) {
+                margin-top: 60px;
+            }
+            .footer-section:nth-child(4) {
+                width: 100%;
+            }
+        }
+        &::after {
+            height: 130px;
+            width: 158px;
+        }
+        .footer-newsletter {
+            margin: 0 60px 60px;
+            justify-content: flex-end;
+        }
+    }
+}
+@media (max-width: 650px) {
+    footer {
+        .footer-infos {
+            flex-direction: column;
+
+            h6 {
+                width: 100%;
+            }
+            .footer-section {
+                width: 100%;
+            }
+        }
+        .footer-newsletter {
+            margin: 0 60px 80px;
+            justify-content: flex-start;
+            width: calc(100% - 200px);
+        }
+
+    }
+}
+
+  

@@ -109,3 +109,15 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+
+    .section-programmation {
+
+        .programmation::before {
+            height: 200px;
+            width: 244px;
+        }
+    }
+
+}

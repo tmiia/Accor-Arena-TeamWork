@@ -66,7 +66,7 @@ let isVisible = function(element){
         return false
     }
 }
-let i = 160;
+let i =5;
 let lastScrollTop = 0;
 let paralax = function(){
     let line1 = document.querySelector("#line1");
@@ -79,13 +79,13 @@ let paralax = function(){
             line1.style.left = i+"px";
             line2.style.right = i+"px";
 
-            i++
+            i = i + 5;
 
         } else {
             line1.style.left = i+"px";
             line2.style.right = i+"px";
 
-            i = i - 0.5
+            i = i - 5;
 
         }
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;

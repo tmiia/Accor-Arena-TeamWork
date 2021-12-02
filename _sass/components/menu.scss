@@ -1,8 +1,13 @@
   .menu{
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     display: flex;
     background-color: #2B2D42;
-    position: relative;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
 
     &::after{
         content: "";
@@ -26,6 +31,10 @@
      font-size: 45px;
      align-items: center;
      margin: 60px;
+     cursor: pointer;
+     &:hover{
+         color: $rouge-hover;
+     }
     }
 
 
@@ -85,3 +94,7 @@
 
 }
 
+.opened{
+    transform: translateY(0%);
+    transition: 0.3s ease-in-out;
+}

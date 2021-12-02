@@ -16,8 +16,8 @@
           <p class="card-heure">{{prog.heure}}</p>
           <p class="card-tarifs">Tarifs : {{prog.tarif}}</p>
         </div>
-        
-        {% include components/primary-button.html text="Réserver"  %}
+        {% assign btn_link = prog.link %}
+        {% include components/primary-button.html link=btn_link  text="Réserver"  %}
       </div>
 
       {% endfor %}

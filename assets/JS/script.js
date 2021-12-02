@@ -66,6 +66,7 @@ let isVisible = function(element){
         return false
     }
 }
+
 let i =5;
 let lastScrollTop = 0;
 let paralax = function(){
@@ -93,3 +94,18 @@ let paralax = function(){
 }
 
 window.addEventListener("scroll", paralax)
+
+/* Menu */
+
+let btn_menu = document.querySelector("#btn-menu");
+let menu = document.querySelector("#menu-slider");
+
+btn_menu.addEventListener("click", function(){
+    menu.classList.add("opened")
+})
+
+let btn_close = document.querySelector("#btn-close");
+
+btn_close.addEventListener("click", function(){
+    menu.classList.remove("opened")
+})

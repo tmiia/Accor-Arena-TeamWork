@@ -12,7 +12,7 @@ programmation_card:
         heure: 20h00 - Concert
         tarif: de 31,20€ à 49,50€
         img: /assets/media/vianney.jpg
-      - link: #
+      - link: page-artiste.html
         artiste: Tryo
         date: Ven. 17 Décembre 2021
         heure: 20h00 - Concert

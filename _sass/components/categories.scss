@@ -1,5 +1,14 @@
 .categories {
     margin: 120px;
+
+    h3::before {
+        content: "";
+        height: 4px;
+        background-color: $noir;
+        width: 120px;
+        margin-right: 60px;
+        display: inline;
+    }
     .cats-tabs {
         display:flex;
         align-items: center;

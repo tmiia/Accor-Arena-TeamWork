@@ -1,18 +1,43 @@
-<div class="row row-cols-1 row-cols-md-4 g-8">
-  <div class="col">
-    <div class="card">
-      <img src="assets/images/Affiche-tryo-concert.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">TRYO</h5>
+<div class="section-programmation">
+
+  {% include components/titre.html %}
+
+  <div class="programmation">
+
+    <div class="row row-cols-1 row-cols-md-4 g-8">
+
+      {% for prog in site.data.programmation.programmation_card.list_1  %}
+
+      <div class="col card">
+        <div class="card-img" style="background-image: url('{{prog.img}}')"></div>
+        <h5 class="card-title">{{prog.artiste}}</h5>
         <div class="card-text">
-          <p class="card-date">LUN.07 AVRIL 2022</p>
-          <p class="card-heure">20H00 - CONCERT</p>
-          <p class="card-tarifs">Tarifs : de 20,50€ à 49,50€</p>
+          <p class="card-date">{{prog.date}}</p>
+          <p class="card-heure">{{prog.heure}}</p>
+          <p class="card-tarifs">Tarifs : {{prog.tarif}}</p>
         </div>
-          <a href="#" class="btn-btn-primary">Tous nos events</a>
-        </div>
+        
+        {% include components/primary-button.html text="Réserver"  %}
       </div>
+
+      {% endfor %}
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-8">
+
+      {% for prog in site.data.programmation.programmation_card.list_2  %}
+      
+      <div class="col card">
+        <div class="card-img" style="background-image: url('{{prog.img}}')"></div>
+        <h5 class="card-title">{{prog.artiste}}</h5>
+        <div class="card-text">
+          <p class="card-date">{{prog.date}}</p>
+          <p class="card-heure">{{prog.heure}}</p>
+          <p class="card-tarifs">Tarifs : {{prog.tarif}}</p>
+        </div>
+        {% include components/primary-button.html text="Réserver"  %}
+      </div>
+      {% endfor %}
     </div>
   </div>
-  
-  
+</div>

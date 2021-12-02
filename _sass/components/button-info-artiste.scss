@@ -7,7 +7,7 @@
       width: 1144px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 180px;
+      margin-bottom: 200px;
 
     .butt{
         display: flex;
@@ -20,25 +20,30 @@
         width: 80px;
         border-radius: 50%;
         margin-right: 30px;
-        
-            &:hover{
-                background-color: rgb(168, 168, 168);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $rouge;
+        font-size: 40px;
+        &:hover{
+            background-color: rgb(168, 168, 168);
 
-                   }
-
-
-
-
-        //    &::after{
-              
-        //         }          
+              }
+                   
+                }          
 
                    .icone-cercle2{
+                       position: relative;
                     background-color: $gris;
                     height: 80px;   
                     width: 80px;
                     border-radius: 50%;
                     margin-right: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $rouge;
+                    font-size: 40px;
             
                         &:hover{
                             background-color: rgb(168, 168, 168);
@@ -49,9 +54,9 @@
 
          .reserv-button{
              margin-top: 20px;
-             margin-left: 1022px;
+             margin-left: 985px;
             position: absolute;
-            padding: 10px 20px;
+            padding: 20px 40px;
             background-color: $rouge;
             color: $blanc;
             border-radius: 5px;

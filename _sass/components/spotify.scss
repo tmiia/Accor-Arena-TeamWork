@@ -1,0 +1,167 @@
+.spotify{
+    display: flex;
+    justify-content: center;
+    margin: 0px 120px 120px 120px;
+
+
+        .widgets{
+            width: 1144px;
+            display: flex;
+            justify-content: space-between;
+
+         .widget-first{
+             position: relative;
+            background-color: #F44336;
+            width: 340px;
+            height: 130px;
+            border-radius: 5px;
+
+            & i{
+                position: absolute;
+                color: $blanc;
+                right: 25px;
+                top: 30px;
+                font-size: 35px;
+            }
+
+            .titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 50px;
+                font-family: $font-text;
+                font-weight: bolder;
+                font-size: 20px;
+
+            }
+            .sur-titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 75px;
+                font-family: $font-text;
+                font-size: 15px;
+
+            }
+
+            .img-spot{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 15px;
+                bottom: 15px;
+                border-radius: 5px;
+                background-image: url(/assets/media/spotify\(tryo1.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+         }
+
+         .widget-seconde{
+            position: relative;
+            background-color: #F86459;
+            width: 340px;
+            height: 130px;
+            border-radius: 5px;
+
+             
+            & i{
+                position: absolute;
+                color: $blanc;
+                right: 25px;
+                top: 30px;
+                font-size: 35px;
+            }
+
+            .titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 50px;
+                font-family: $font-text;
+                font-weight: bolder;
+                font-size: 20px;
+
+            }
+            .sur-titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 75px;
+                font-family: $font-text;
+                font-size: 15px;
+
+            }
+
+            .img-spot{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 15px;
+                bottom: 15px;
+                border-radius: 5px;
+                background-image: url(/assets/media/spottryo2.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+         
+         .widget-therd{
+            position: relative;
+            background-color: #FF9800;
+            width: 340px;
+            height: 130px;
+            border-radius: 5px;
+
+            & i{
+                position: absolute;
+                color: $blanc;
+                right: 25px;
+                top: 30px;
+                font-size: 35px;
+            }
+
+            .titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 50px;
+                font-family: $font-text;
+                font-weight: bolder;
+                font-size: 20px;
+
+            }
+            .sur-titre{
+                color: $blanc;
+                position: absolute;
+                left: 130px;
+                bottom: 75px;
+                font-family: $font-text;
+                font-size: 15px;
+
+            }
+
+            .img-spot{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 15px;
+                bottom: 15px;
+                border-radius: 5px;
+                background-image: url(/assets/media/spottryo3.jpg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            
+         }
+    }
+ }
+
+
+    
+    
+
+

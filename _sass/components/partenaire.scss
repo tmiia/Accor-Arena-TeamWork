@@ -1,19 +1,29 @@
 .partenaire{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    min-height: 120px;
     margin: $margin-desktop 0;
+    overflow: hidden;
     img{
         width: 150px;
         height: 60px;
     }
-    .partLine1{
+    .part-line1{
+        position: absolute;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        top: 0;
+        left: 0;
     }
-    .partLine2{
+    .part-line2{
+        position: absolute;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        bottom: 0;
+        right: 0;
     }
 }

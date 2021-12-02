@@ -47,3 +47,49 @@ function openTab(evt, tabActive) {
     document.getElementById(tabActive).style.display = "flex";
     evt.currentTarget.className += " active";
 }
+
+/* paralax */
+let partSection = document.querySelector("#partenaire");
+let midS = window.innerHeight /2;
+
+let isVisible = function(element){   
+    let inScreen = element.getBoundingClientRect();
+
+    if(inScreen.top >= 0 &&
+        inScreen.left >= 0 &&
+        inScreen.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        inScreen.bottom <= (window.innerHeight || document.documentElement.clientHeight)){
+
+        return true
+    }
+    else{
+        return false
+    }
+}
+let i =5;
+let lastScrollTop = 0;
+let paralax = function(){
+    let line1 = document.querySelector("#line1");
+    let line2 = document.querySelector("#line2");
+    //let pos = partSection.getBoundingClientRect().top;
+
+    if(isVisible(partSection)){
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (scrollTop > lastScrollTop){
+            line1.style.left = i+"px";
+            line2.style.right = i+"px";
+
+            i = i + 5;
+
+        } else {
+            line1.style.left = i+"px";
+            line2.style.right = i+"px";
+
+            i = i - 5;
+
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+}
+
+window.addEventListener("scroll", paralax)

@@ -1,7 +1,13 @@
+
+
+
+
+
 .sect-button-artiste{
     display: flex;
     justify-content: space-between;
     margin: 0 120px 120px 120px;
+    margin-bottom: 180px;
 
     .butt{
         display: flex;
@@ -25,30 +31,30 @@
             }
         }
 
-        .reserv-button{
-            margin-top: 20px;
-            margin-left: 985px;
-           position: absolute;
-           padding: 20px 40px;
-           background-color: $rouge;
-           color: $blanc;
-           border-radius: 5px;
-           font-family: $font-text;
-           text-transform: uppercase;
-           text-align: center;
-           font-size: 16px;
-           font-weight: bolder;
-           letter-spacing: 4%;
-           transition: background-color .3s ease-in-out;
-           
-           &:hover{
-           color: $blanc;
-           background-color: $rouge-hover;
-           }
-       }   
     }   
+    .reserv-button{
+        margin-top: 20px;
+        margin-left: 985px;
+       position: absolute;
+       padding: 10px 20px;
+       background-color: $rouge;
+       color: $blanc;
+       border-radius: 5px;
+       font-family: $font-text;
+       text-transform: uppercase;
+       text-align: center;
+       font-size: 16px;
+       font-weight: bolder;
+       letter-spacing: 4%;
+       transition: background-color .3s ease-in-out;
+       
+       &:hover{
+       color: $blanc;
+       background-color: $rouge-hover;
+       }
+    }
+             
+}   
+    
 
-}          
-
-         
 

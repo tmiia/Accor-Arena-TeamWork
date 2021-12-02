@@ -1,7 +1,11 @@
+.section-artiste{
+
+
+
 .info{
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    margin: 0px 120px 120px 120px;
  
  
      .rectangle{
@@ -33,6 +37,7 @@
  
          .txt{
              margin: 50px;
+             font-family: Raleway, sans-serif;
  
          }
  
@@ -56,3 +61,4 @@
      }
  
      }
+}

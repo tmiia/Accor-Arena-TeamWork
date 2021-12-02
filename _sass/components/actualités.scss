@@ -15,7 +15,7 @@
 .texte-actualité {
     width: 240px;
     text-align: left;
-    font-family: $-fonttexte;
+    font-family: $font-text;
     color: $bleu;
     
   }
@@ -23,7 +23,7 @@
 .titre-actu{
     margin-top: 30px;
     font-size: 15px;
-    font-family: $-fonttitre;
+    font-family: $font-titre;
     color: $bleu;
     letter-spacing: 1px;
     font-weight: normal;
@@ -35,7 +35,7 @@
     height: 140px;
     font-size: 14px;;
     color: $bleu;
-    font-family: $--fonttexte;
+    font-family: $font-text;
 }
 
 
@@ -46,7 +46,7 @@
     background-color: $rouge;
     color: $blanc;
     border-radius: 5px;
-    font-family: $--fonttexte;
+    font-family: $font-text;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;

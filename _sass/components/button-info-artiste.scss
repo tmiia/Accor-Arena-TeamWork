@@ -7,10 +7,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 120px 120px 120px;
-    margin-bottom: 180px;
+    width: 1144px;
+    
 
     .butt{
         display: flex;
+        
 
         .icone-cercle{
             background-color: $gris;

@@ -1,4 +1,4 @@
-  .menu{
+.menu{
     z-index: 800;
     position: fixed;
     top: 0;
@@ -7,6 +7,7 @@
     display: flex;
     background-color: #2B2D42;
     transform: translateY(-100%);
+    align-items:center;
     transition: 0.3s ease-in-out;
 
     &::after{
@@ -26,24 +27,28 @@
     /* bouton retour */
     
     .close-but{
-     display: flex;
-     color: $rouge;
-     font-size: 45px;
-     align-items: center;
-     margin: 60px;
-     cursor: pointer;
-     &:hover{
-         color: $rouge-hover;
-     }
+        display: flex;
+        color: $rouge;
+        font-size: 45px;
+        align-items: center;
+        margin: 60px;
+        cursor: pointer;
+        height: 31px;
+        width: 31px;
+        transition: .3s ease-in-out;
+     
+        &:hover{
+            color: $rouge-hover;
+        }
     }
-
 
     /* bouton de nav */
     
-    .ligne-colone{
+    .ligne-colone {
         display: flex;
         flex-wrap: wrap;
         margin: 60px;
+        height: calc(100% - 120px);
         align-items: center;
         justify-content: space-between;
 
@@ -84,13 +89,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        i{
-           margin: 50px;
-           font-size: 33px;
-           color: $blanc;
+
+        a {
+            height: 33px;
+            width: 33px;
+            font-size: 33px;
+            margin: 50px;
+            color: $blanc;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: $rouge-hover;
+            }
         }
-   
-       }
+    }
 
 }
 

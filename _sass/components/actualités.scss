@@ -11,7 +11,7 @@
 
     .row {
 
-    margin: 0 $margin-desktop 180px;
+    margin: 0 $margin-desktop;
     justify-content: space-between;
 
         .item-actu {
@@ -20,7 +20,6 @@
             display:flex;
             flex-direction: column;
             align-items: flex-start;
-            margin: 0 0 $margin-desktop;
             padding: 0;
 
             .actu-img {

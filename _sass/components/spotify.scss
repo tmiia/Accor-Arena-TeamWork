@@ -1,167 +1,77 @@
 .spotify{
-    display: flex;
-    justify-content: center;
     margin: 0px 120px 120px 120px;
 
+    h3::after {
+        content: "";
+        height: 4px;
+        background-color: $noir;
+        width: 120px;
+        margin-left: 60px;
+        display: inline;
+    }
+    
+    .widgets {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+         
+            .spotify-item {
+                position: relative;
+                background-color: #F44336;
+                width: 340px;
+                height: 130px;
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
 
-        .widgets{
-            width: 1144px;
-            display: flex;
-            justify-content: space-between;
+                .img-spot{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                    background-image: url('/assets/media/spotify_tryo1.jpg');
+                    background-size: 100%;
+                    background-position: center;
+                    margin: 15px;
+                    transition: background-size .3s ease-in-out;
+                }
+                .spot-txt {
+                    color: $blanc;
+                    font-family: $font-text;
+                    font-size: 15px;
+                    
+                    b {
+                        font-family: $font-text;
+                        font-size: 20px;
+                        font-weight: bolder;
+                        display: block;
+                    }
+                }
+                & i {
+                    position: absolute;
+                    color: $blanc;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 35px;
+                }
+                &:nth-child(2) {
+                    background-color: #F86459;
 
-         .widget-first{
-             position: relative;
-            background-color: #F44336;
-            width: 340px;
-            height: 130px;
-            border-radius: 15px;
+                    .img-spot {
+                        background-image: url('/assets/media/spotify_tryo2.jpg');
+                    }
+                }
+                &:nth-child(3) {
+                    background-color: #FF9800;
 
-            & i{
-                position: absolute;
-                color: $blanc;
-                right: 25px;
-                top: 30px;
-                font-size: 35px;
-            }
-
-            .titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 50px;
-                font-family: $font-text;
-                font-weight: bolder;
-                font-size: 20px;
-
-            }
-            .sur-titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 75px;
-                font-family: $font-text;
-                font-size: 15px;
-
-            }
-
-            .img-spot{
-                position: absolute;
-                width: 100px;
-                height: 100px;
-                left: 15px;
-                bottom: 15px;
-                border-radius: 10px;
-                background-image: url(/assets/media/spotify\(tryo1.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
-
-         }
-
-         .widget-seconde{
-            position: relative;
-            background-color: #F86459;
-            width: 340px;
-            height: 130px;
-            border-radius: 15px;
-
-             
-            & i{
-                position: absolute;
-                color: $blanc;
-                right: 25px;
-                top: 30px;
-                font-size: 35px;
-            }
-
-            .titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 50px;
-                font-family: $font-text;
-                font-weight: bolder;
-                font-size: 20px;
-
-            }
-            .sur-titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 75px;
-                font-family: $font-text;
-                font-size: 15px;
-
-            }
-
-            .img-spot{
-                position: absolute;
-                width: 100px;
-                height: 100px;
-                left: 15px;
-                bottom: 15px;
-                border-radius: 10px;
-                background-image: url(/assets/media/spottryo2.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
+                    .img-spot {
+                        background-image: url('/assets/media/spotify_tryo3.jpg');
+                    }
+                }
+                &:hover {
+                    .img-spot {
+                        background-size: 120%;
+                    }
+                }
             }
         }
-
-         
-         .widget-therd{
-            position: relative;
-            background-color: #FF9800;
-            width: 340px;
-            height: 130px;
-            border-radius: 15px;
-
-            & i{
-                position: absolute;
-                color: $blanc;
-                right: 25px;
-                top: 30px;
-                font-size: 35px;
-            }
-
-            .titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 50px;
-                font-family: $font-text;
-                font-weight: bolder;
-                font-size: 20px;
-
-            }
-            .sur-titre{
-                color: $blanc;
-                position: absolute;
-                left: 130px;
-                bottom: 75px;
-                font-family: $font-text;
-                font-size: 15px;
-
-            }
-
-            .img-spot{
-                position: absolute;
-                width: 100px;
-                height: 100px;
-                left: 15px;
-                bottom: 15px;
-                border-radius: 10px;
-                background-image: url(/assets/media/spottryo3.jpg);
-                background-size: 100%;
-                background-repeat: no-repeat;
-            }
-
-            
-         }
     }
- }
-
-
-    
-    
-
-

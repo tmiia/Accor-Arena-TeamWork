@@ -5,46 +5,47 @@ programmation_card:
         date: Dim. 05 Décembre 2021
         heure: 20h00 - Concert
         tarif: de 50,80€ à 64,90€
-        img: /assets/media/
+        img: /assets/media/orelsan.jpg
       - link: #
         artiste: Vianney
         date: Jeu. 10 Décembre 2021
         heure: 20h00 - Concert
         tarif: de 31,20€ à 49,50€
-        img:
+        img: /assets/media/vianney.jpg
       - link: #
         artiste: Tryo
         date: Ven. 17 Décembre 2021
         heure: 20h00 - Concert
         tarif: de 20,50€ à 49,50€
-        img:
+        img: /assets/media/tryo.jpg
       - link: #
         artiste: Ninho
         date: Mar. 28 Décembre 2021
         heure: 20h00 - Concert
         tarif: de 35,50€ à 49,50€
-        img:
+        img: /assets/media/ninho.jpg
+  list_2:
       - link: #
         artiste: Dua Lipa
         date: Mer. 05 Janvier 2022
         heure: 20h00 - Concert
         tarif: de 50,80€ à 150€
-        img:
+        img: /assets/media/dualipa.jpg
       - link: #
         artiste: Snoop Dog
         date: Lun. 10 Janvier 2022
         heure: 20h00 - Concert
         tarif: de 45,20€ à 95,50€
-        img:
+        img: /assets/media/snopp-dogg.png
       - link: #
         artiste: Tayc
         date: Dim. 19 Janvier 2022
         heure: 20h00 - Concert
         tarif: de 41,80 à 49,50€
-        img:
+        img: /assets/media/dualipa.jpg
       - link: #
         artiste: Sopico
         date: Ven. 24 Janvier 2022
         heure: 20h00 - Concert
         tarif: de 49,50€ à 65,50€
-        img:
+        img: /assets/media/sopico.jpg

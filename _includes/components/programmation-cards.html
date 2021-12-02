@@ -1,13 +1,13 @@
 {% for prog in site.data.programmation.programmation_card.list_1  %}
 
 <div class="col card">
-    <div class="card-img"></div>
+    <div class="card-img" style="background-image: url('{{prog.img}}')"></div>
     <div class="card-body">
         <h5 class="card-title">{{prog.artiste}}</h5>
         <div class="card-text">
             <p class="card-date">{{prog.text}}</p>
             <p class="card-heure">{{prog.text}}</p>
-            <p class="card-tarifs">{% assign programmation_card = prog.tarifs | prepend: "Tarif : " %}</p>
+            <p class="card-tarifs">{% assign programmation_card = prog.tarifs | prepend: "Tarifs : " %}</p>
         </div>
         {% include components/primary-button.html text=button_text  %}
     </div>

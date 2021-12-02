@@ -1,6 +1,6 @@
 
 .btn-red{
-    background-color:var(--rouge);
+    background-color:$rouge;
 }
 .img-evenement{
     width: 240px;
@@ -18,7 +18,7 @@ a{
 .contenant {
   position: relative;
   text-align: center;
-  color:var(--rouge);
+  color:$rouge-hover;
 }
 
 .texte_centrer {
@@ -30,7 +30,7 @@ a{
 .contenant {
     position: relative;
     text-align: center;
-    color:#CED0CE;
+    color:#769476;
   }
   
   .texte_centrer {
@@ -60,8 +60,8 @@ a{
     position: absolute;
     top: -15px;
     right: 15px;
-    background-color:var(--rouge);
-    border: 1px solid var(--rouge);
+    background-color:$rouge;
+    border: 1px solid $rouge;
     transition: background-color 0,25ms;
 }
 
@@ -76,5 +76,5 @@ a{
 }
 .box-film .btn:hover{
     
-    background-color: var(--rougeHov);
+    background-color:$rouge-hover;
  } 

@@ -1,6 +1,7 @@
 .global{
     display: flex;
     justify-content: center;
+    margin: 120px;
 
 
 .button-artiste{
@@ -8,7 +9,6 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 200px;
-
     .butt{
         display: flex;
         align-items: flex-start;

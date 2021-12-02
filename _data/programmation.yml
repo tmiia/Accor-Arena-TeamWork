@@ -7,11 +7,11 @@ programmation_card:
         tarif: de 50,80€ à 64,90€
         img: /assets/media/orelsan.jpg
       - link: #
-        artiste: Vianney
+        artiste: Brebis Verte
         date: Jeu. 10 Décembre 2021
         heure: 20h00 - Concert
-        tarif: de 31,20€ à 49,50€
-        img: /assets/media/vianney.jpg
+        tarif: de 11,20€ à 15,50€
+        img: /assets/media/brebis.jpg
       - link: page-artiste.html
         artiste: Tryo
         date: Ven. 17 Décembre 2021

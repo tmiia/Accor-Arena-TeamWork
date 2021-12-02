@@ -1,0 +1,19 @@
+.partenaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: $margin-desktop 0;
+    img{
+        width: 150px;
+        height: 60px;
+    }
+    .partLine1{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .partLine2{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

@@ -1,29 +1,33 @@
 
-h3{
-    color: $bleu;
-    font-size: 42px;
-    text-transform: uppercase;
-    font-family: $font-titre;
-    letter-spacing: 1px;
-    font-weight: normal;
+h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 120px 0;
-}
+    font-family: $font-titre;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $noir;
+    margin: $margin-desktop;
 
-h3::after{
-    content:'';
-    background-color: $noir;
-    width: 180px;
-    height: 4px;
-    margin-left: 60px;
+    strong {
+        font-weight: 400;
+        color: $rouge;
+    }
 }
-
-h3::before{
-    content:'';
-    background-color: $noir;
-    width: 180px;
+h3.left::before {
+    content: "";
     height: 4px;
+    background-color: $noir;
+    width: 120px;
     margin-right: 60px;
+    display: inline;
+  }
+h3.right::after {
+    content: "";
+    height: 4px;
+    background-color: $noir;
+    width: 120px;
+    margin-left: 60px;
+    display: inline;
 }

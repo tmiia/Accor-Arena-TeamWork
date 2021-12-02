@@ -1,100 +1,111 @@
-.programmation {
-    margin: $margin-desktop 0;
-    padding-top: $margin-desktop;
-    background-color: $bleu;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
+.section-programmation {
 
-    &::before {
+    h3::after {
         content: "";
-        height: 259px;
-        width: 308px;
-        background-image: url("/assets/media/shapes_1.svg");
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(calc(-100% + 1px));
+        height: 4px;
+        background-color: $noir;
+        width: $margin-desktop;
+        margin-left: 60px;
+        display: inline;
     }
 
-    .row {
-        width: 100%;
-        justify-content: space-between;
-        margin: 0 $margin-desktop;
+    .programmation {
+        margin: $margin-desktop 0;
+        padding-top: $margin-desktop;
+        background-color: $bleu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
 
-        .card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #FDFFFF;
-            color: #161219;
-            border-radius: 5px;
-            width: 260px;
-            text-align: center;
-            font-family: "Raleway";
-            position: relative;
-            padding: 0 0 40px;
-            transition: transform 0.3s ease-in-out;
-            margin: 0 0 120px;
-            border: none;
-            transition: transform .3s;
+        &::before {
+            content: "";
+            height: 259px;
+            width: 308px;
+            background-image: url("/assets/media/shapes_1.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(calc(-100% + 1px));
+        }
 
-            &:hover {
-                transform: scale(1.1);
-            }
-    
-            .card-img {
-                width: 100%;
-                background-size: cover;
-                background-position: center;
-                clip-path: circle(70.8% at 50% 0);
+        .row {
+            width: 100%;
+            justify-content: space-between;
+            margin: 0 $margin-desktop;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #FDFFFF;
+                color: #161219;
                 border-radius: 5px;
-                height: 150px;
-                margin-top: -1px;
-            }
-            h5 {
-                background-image: linear-gradient(90deg, #2B2D42 0%, #045D62 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-family: $font-titre;
-                font-size: 28px;
-                letter-spacing: 1px;
-                margin: 20px 15px;
-                font-weight: bold;
-            }
-            .card-text {
-                text-transform: uppercase;
-                font-size: 14px;
-                font-family: $font-text;
-
-                .card-date {
+                width: 260px;
+                text-align: center;
+                font-family: "Raleway";
+                position: relative;
+                padding: 0 0 40px;
+                transition: transform 0.3s ease-in-out;
+                margin: 0 0 120px;
+                border: none;
+        
+                .card-img {
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    clip-path: circle(70.8% at 50% 0);
+                    border-radius: 5px;
+                    height: 150px;
+                    margin-top: -1px;
+                }
+                h5 {
+                    background-image: linear-gradient(90deg, #2B2D42 0%, #045D62 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-family: $font-titre;
+                    font-size: 28px;
+                    letter-spacing: 1px;
+                    margin: 20px 15px;
                     font-weight: bold;
+                    pointer-events:none;
                 }
-                .card-heure {
-                    font-size: 12px;
-                    margin-bottom: 20px;
-                    text-transform: none;
+                .card-text {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-family: $font-text;
+                    pointer-events: none;
+
+                    .card-date {
+                        font-weight: bold;
+                    }
+                    .card-heure {
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                    }
+                    .card-tarifs {
+                        text-transform: none;
+                    }
                 }
-            }
-            a {
-                position: absolute;
-                bottom: -22px;
-                padding: 10px 30px;
-                font-family: $font-titre;
-                font-size: 20px;
-                letter-spacing: 1.5px;
+                a {
+                    position: absolute;
+                    bottom: -22px;
+                    padding: 10px 30px;
+                    font-family: $font-titre;
+                    font-size: 20px;
+                    letter-spacing: 1.5px;
+                }
             }
         }
-    }
-    .row:nth-child(2) .col:nth-child(2) .card-img {
-        background-position: top;
-    }
-    .row:nth-child(1) .col:nth-child(3) .card-img {
-        background-image: url(/assets/media/tryo.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: black;
+        .row:nth-child(2) .col:nth-child(2) .card-img {
+            background-position: top;
+        }
+        .row:nth-child(1) .col:nth-child(3) .card-img {
+            background-image: url(/assets/media/tryo.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
     }
 }

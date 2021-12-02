@@ -84,11 +84,15 @@
                 font-size: 20px;
                 letter-spacing: 1.5px;
             }
-    
-    
         }
-        
-     
     }
-
+    .row:nth-child(2) .col:nth-child(2) .card-img {
+        background-position: top;
+    }
+    .row:nth-child(1) .col:nth-child(3) .card-img {
+        background-image: url(/assets/media/tryo.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
 }

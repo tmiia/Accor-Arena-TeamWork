@@ -5,7 +5,7 @@ programmation_card:
         date: Dim. 05 Décembre 2021
         heure: 20h00 - Concert
         tarif: de 50,80€ à 64,90€
-        img:
+        img: /assets/media/
       - link: #
         artiste: Vianney
         date: Jeu. 10 Décembre 2021

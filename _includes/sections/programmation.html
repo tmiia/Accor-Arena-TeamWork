@@ -1,3 +1,5 @@
+{% include components/titre.html text="Réserver"  %}
+
 
 <div class="programmation">
 
@@ -11,9 +13,10 @@
       <div class="card-text">
         <p class="card-date">{{prog.date}}</p>
         <p class="card-heure">{{prog.heure}}</p>
-        <p class="card-tarifs">{% assign programmation_card = prog.tarifs | prepend: "Tarifs : " %}</p>
+        <p class="card-tarifs">Tarifs : {{prog.tarif}}</p>
       </div>
-      {% include components/primary-button.html text=button_resa  %}
+      
+      {% include components/primary-button.html text="Réserver"  %}
     </div>
 
     {% endfor %}

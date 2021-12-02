@@ -1,5 +1,14 @@
 .section-actualites {
 
+    h3::after {
+        content: "";
+        height: 4px;
+        background-color: $noir;
+        width: 120px;
+        margin-left: 60px;
+        display: inline;
+    }
+
     .row {
 
     margin: 0 $margin-desktop 180px;
@@ -11,6 +20,8 @@
             display:flex;
             flex-direction: column;
             align-items: flex-start;
+            margin: 0 0 $margin-desktop;
+            padding: 0;
 
             .actu-img {
                 width: 100%;
@@ -77,4 +88,36 @@
     color: $bleu;
     font-family: $font-text;
 }
+
+@media (max-width: 650px) {
+    .section-actualites {
+        .row {
+            margin: 0 $margin-mobile $margin-mobile $margin-desktop;
+
+            .item-actu {
+                margin: 0 0 60px;
+                max-width: unset;
+                width: 100%;
+                flex-direction: row;
+                .actu-img {
+                    width: 120px;
+                    margin-right: 35px;
+                    height: 100%;
+                    min-height: 180px;
+                }
+                .actu-txt  {
+                    h4 {
+                        margin: 0 0 30px;
+                    }
+                }
+                
+                a {
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
 

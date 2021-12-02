@@ -60,23 +60,24 @@
                     height: 150px;
                     margin-top: -1px;
                 }
-                h5 {
-                    background-image: linear-gradient(90deg, #2B2D42 0%, #045D62 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-family: $font-titre;
-                    font-size: 28px;
-                    letter-spacing: 1px;
-                    margin: 20px 15px;
-                    font-weight: bold;
-                    pointer-events:none;
-                }
                 .card-text {
                     text-transform: uppercase;
                     font-size: 14px;
                     font-family: $font-text;
                     pointer-events: none;
 
+                    
+                    h5 {
+                        background-image: linear-gradient(90deg, #2B2D42 0%, #045D62 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-family: $font-titre;
+                        font-size: 28px;
+                        letter-spacing: 1px;
+                        margin: 20px 15px;
+                        font-weight: bold;
+                        pointer-events:none;
+                    }
                     .card-date {
                         font-weight: bold;
                     }
@@ -120,4 +121,59 @@
         }
     }
 
+}
+@media (max-width: 650px) {
+    .section-programmation {
+        .programmation {
+            padding-bottom: 60px;
+            
+            &::before {
+                right: 0;
+                left: unset;
+            }
+            margin: $margin-mobile 0;
+            .row {
+                margin: 0 60px 60px 120px;
+
+                .card {
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0;
+                    height: 180px;
+                    margin: 0 0 $margin-mobile;
+                    text-align: right;
+
+                    .card-img {
+                        clip-path: circle(99.7% at 0 50%);
+                        height: 100%;
+                        margin-top: 0;
+                        flex: 0.84;
+                    }
+                    .card-text {
+                        flex:1;
+                        margin-right: 30px;
+
+                        h5 {
+                            margin: 0 0 10px;
+                        }
+                        .card-date {
+                            font-size: 19px;
+                        }
+                    }
+                    a {
+                        left: 42%;
+                    }
+                }
+                .card:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .row:nth-child(2) {
+                margin-top: 0;
+            }
+        }
+
+    }
+    
 }

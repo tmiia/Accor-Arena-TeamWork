@@ -10,9 +10,17 @@ $noire-opac: #0000002c;
 $blanc: #FDFFFF;
 $rouge-hover: #972215;
 $gradient-title: linear-gradient(90deg, #2B2D42 0%, #045D62 100%);
+$gradient-shadow: linear-gradient(90deg, #2B2D42 0%, rgba(196, 196, 196, 0) 100%);
 /*Marges*/
 $margin-desktop : 120px;
 $margin-mobile : 60px;
 /*Font Family*/
 $font-titre : "Staatliches";
 $font-text : "Raleway";
+
+$tab1: #1E6266;
+$tab2: #57AFB5;
+$tab3: #7DCCD0;
+$tab4: #A7C9D0;
+$tab5: #6898A1;
+$tab6: #5A76A0;

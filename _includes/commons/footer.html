@@ -1,0 +1,37 @@
+<footer>
+    <div class="footer-infos">
+        <h6>Contactez-nous<i class="fas fa-level-down-alt"></i></h6>
+​
+        <div class="footer-section">
+            <h5>Nous trouver</h5>
+            <p>8 boulevard de Bercy
+                <br/>75012, PARIS
+                <br/><br/>01 75 44 04 00
+            </p>
+        </div>
+        <div class="footer-section">
+            <h5>Plan du site</h5>
+            {% for item in site.data.nav.footer.list_1  %}
+                <a href="{{ item.link }}"><span>{{ item.text }}</span></a>
+            {% endfor %}
+        </div>
+        <div class="footer-section">
+            <h5>Infos pratiques</h5>
+            
+            {% for item in site.data.nav.footer.list_2  %}
+                <a href="{{ item.link }}"><span>{{ item.text }}</span></a>
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="footer-newsletter">
+        <span>Recevoir notre newsletter</span>
+        <form>
+            <input type="email" name="newsletter" id="newsletter" placeholder="prenom.nom@adressemail.com">
+            <input type="submit" class="primary-button" value="s'inscrire" id="news-submit">
+        </form>
+    </div>
+    <div class="footer-credits">
+        <span>Created by ♡️ • nebulab agency ©</span>
+    </div>
+</footer>

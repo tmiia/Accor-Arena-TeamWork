@@ -1,0 +1,115 @@
+$tab1: #1E6266;
+$tab2: #57AFB5;
+$tab3: #7DCCD0;
+$tab4: #A7C9D0;
+$tab5: #6898A1;
+$tab6: #5A76A0;
+
+.categories {
+
+    margin: $margin-desktop;
+
+    .cateTabs {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                height: 50px;
+                width: 50px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease-in-out;
+
+                img {
+                    width: 80%;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            &:first-child {
+                button {background-color: $tab1}
+            }
+            &:nth-child(2) {
+                button {background-color: $tab2;}
+            }
+            &:nth-child(3) {
+                button {background-color: $tab3;}
+            }
+            &:nth-child(4) {
+                button {background-color: $tab4;}
+            }
+            &:nth-child(5) {
+                button {background-color: $tab5;}
+            }
+            &:nth-child(6) {
+                button {background-color: $tab6;}
+            }
+
+        }
+    }
+
+    .tabContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;        
+        animation: fading 1s;
+        position: relative;
+        border-radius: 5px;
+        color: $blanc;
+
+        @keyframes fading {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        &:before {
+            content:"";
+            position: absolute;
+            top:0; bottom:0;
+            left:0; right: 0;
+            background: $gradientShadow;
+            z-index: 1;
+        }
+
+        h6 {
+            font-family: $font-titre;
+            z-index: 3;
+        }
+        p {
+            font-size: $font-text;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+    }
+    #classique {
+        background-image: url('../../assets/media/bann_classic.webp');
+    }
+    #rap {
+        background-image: url('../../assets/media/bann_rap.jfif');
+    }
+    #rock {
+        background-image: url('../../assets/media/bann_rock.webp');
+    }
+    #jazz {
+        background-image: url('../../assets/media/bann_jazz.webp');
+    }
+    #folk {
+        background-image: url('../../assets/media/bann_folk.jpg');
+    }
+    #pop {
+        background-image: url('../../assets/media/bann_pop.webp');
+    }
+}

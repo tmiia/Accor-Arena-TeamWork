@@ -1,0 +1,87 @@
+  .menu{
+    height: 100vh;
+    display: flex;
+    background-color: #2B2D42;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+       background-image: url("/assets/media/shape_2.svg");
+       width: 360px;
+       height: 220px;
+       bottom: 0;
+       right: 120px;    
+       background-repeat: no-repeat;
+       background-position: bottom;
+       transform:  rotateY(180deg);
+       background-size: contain;
+    }
+
+    /* bouton retour */
+    
+    .close-but{
+     display: flex;
+     color: $rouge;
+     font-size: 45px;
+     align-items: center;
+     margin: 60px;
+    }
+
+
+    /* bouton de nav */
+    
+    .ligne-colone{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            font-size: 40px;
+            font-family: "Staatliches", sans-serif;
+            white-space: nowrap;
+            width: 34%;
+            text-align: start;
+            letter-spacing: 1.75px;
+            justify-self: unset;
+            a{
+                position: relative;
+                color: $blanc;
+
+                &::after {
+                    content: ""; 
+                    background-color: $blanc;
+                    height: 3px;
+                    position: absolute;
+                    width: 60px;
+                    bottom: -15px;
+                    left :0;
+                    transition: 0.3s ease-in-out;
+                   }
+
+                &:hover::after{
+                    width: 100%;
+                  
+                  }   
+            }
+
+
+        }
+
+    }
+    .icon-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        i{
+           margin: 50px;
+           font-size: 33px;
+           color: $blanc;
+        }
+   
+       }
+
+}
+

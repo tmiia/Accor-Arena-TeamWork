@@ -180,8 +180,10 @@
     }
 }
 @media (min-width: 950px) {
-    .primary-button{
-        display: none;
+    .slider{
+        .primary-button{
+            display: none;
+        }
     }
 }
 @media (max-width: 950px) {

@@ -177,3 +177,32 @@
         }
     }
 }
+@media (max-width: 600px) {
+    .section-categories {
+        .categories {
+            margin: 60px;
+
+            #rock {
+                p {
+                    overflow: hidden;
+                    height: 70px;
+                }
+                
+            }
+            #pop {
+                p {
+                    overflow: hidden;
+                    height: 100px;
+                }
+                
+            }
+            #jazz {
+                p {
+                    overflow: hidden;
+                    height: 70px;
+                }
+                
+            }
+        }
+    }
+}

@@ -94,10 +94,12 @@
             margin: 0 $margin-mobile $margin-mobile $margin-desktop;
 
             .item-actu {
-                margin: 0 0 60px;
+                margin: 0 0 100px;
                 max-width: unset;
                 width: 100%;
                 flex-direction: row;
+                position:relative;
+
                 .actu-img {
                     width: 120px;
                     margin-right: 35px;
@@ -113,6 +115,12 @@
                 a {
                     position: absolute;
                     bottom: 0;
+                    transform: translateY( calc(100% + 20px));
+                    font-size: 14px;
+                    padding: 9px 15px;
+                }
+                &:last-child {
+                    margin-bottom: 60px;
                 }
             }
         }
@@ -124,6 +132,21 @@
         .row {
             margin: 0 $margin-mobile $margin-mobile $margin-mobile;
 
+        }
+    }
+}
+@media (max-width: 450px) {
+    .section-actualites {
+        .row {
+            margin: 0 30px 30px 30px;
+            .item-actu {
+                .actu-txt {
+                    h4 {
+                        margin: 0 0 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
         }
     }
 }

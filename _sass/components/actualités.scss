@@ -118,6 +118,8 @@
                     transform: translateY( calc(100% + 20px));
                     font-size: 14px;
                     padding: 9px 15px;
+                    left: 0;
+                    right: unset !important;
                 }
                 &:last-child {
                     margin-bottom: 60px;

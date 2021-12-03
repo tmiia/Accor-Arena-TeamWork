@@ -203,7 +203,7 @@
         }
     }
 }
-@media (max-width: 500px)  {
+@media (max-width: 550px)  {
     .section-categories {
         .categories {
             .cats-tabs {
@@ -215,6 +215,9 @@
             .tab-content {
                 p {
                     display: none;
+                }
+                a {
+                    right: 30px;
                 }
             }
         }

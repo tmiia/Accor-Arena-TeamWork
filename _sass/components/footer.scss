@@ -235,6 +235,19 @@ footer {
 
     }
 }
+
+@media (max-width: 450px) {
+    footer {
+        &::after {
+            height: 130px;
+            width: 158px;
+            transform: rotate(90deg) rotateY(180deg) rotateX(180deg);
+            top: 20%;
+            left: unset;
+            right: -14px;
+        }
+    }
+} 
 @media (max-width: 400px) {
     footer {
         .footer-infos {

@@ -1,7 +1,8 @@
 .autres-events{
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
+    position: relative;
 }
 
 .centrage{
@@ -17,7 +18,9 @@
     border-radius: 5px;
     z-index: 0;
 }
-    
+.H3-autres{
+    margin-bottom: 60px;
+}
 .img-e{
     position: absolute;
     object-fit: cover;
@@ -36,9 +39,19 @@
         left: 0;
         bottom: 0;
         right: 0;
+        
+    }
+
+    &:hover{
+        background: linear-gradient(90deg, #000000 0%, rgba(196, 196, 196, 0.288) 100%);
+
     }
 }
 
+.but-s{
+    position: absolute; 
+bottom: -100px;
+}
 
 
 .buttons-autre{
@@ -53,7 +66,7 @@
     position: relative;
 }
 
-.block-film{margin: 0 120px 120px 120px;}
+// .block-film{margin: 0 120px 120px 120px;}
   
 .box-film .titre-film{
     position: absolute;

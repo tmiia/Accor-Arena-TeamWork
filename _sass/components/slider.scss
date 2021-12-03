@@ -179,3 +179,45 @@
         }
     }
 }
+@media (min-width: 950px) {
+    .primary-button{
+        display: none;
+    }
+}
+@media (max-width: 950px) {
+    .slider{
+        .reserver, .slider{
+            display: none;
+        }
+
+        .info-slider{
+            width: 80%;
+            margin: 0 0 120px $margin-mobile;
+            .type{
+                font-family: $font-titre;
+                font-size: 20px;
+                letter-spacing: 9%;
+            }
+            h4{
+                font-family: $font-titre;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+            .info-name-date{
+                font-family: $font-text;
+                font-size:20px;
+                font-weight: 300;
+                white-space: nowrap;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .text-slider{
+                font-family: $font-text;
+                font-size: 16px;
+                letter-spacing: 4%;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

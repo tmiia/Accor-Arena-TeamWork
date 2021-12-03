@@ -37,3 +37,13 @@ header{
         transition: 0.25s ease-in-out;
     }
 }
+
+
+
+@media (max-width: 650px) {
+    header {
+        h2 {
+            font-size: 8vw;
+        }
+    }
+}

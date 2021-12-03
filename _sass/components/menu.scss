@@ -1,8 +1,8 @@
 .menu{
     z-index: 800;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
     height: 100vh;
     display: flex;
     background-color: #2B2D42;
@@ -51,8 +51,9 @@
         height: calc(100% - 120px);
         align-items: center;
         justify-content: space-between;
+        z-index:3;
 
-        div{
+        div {
             font-size: 40px;
             font-family: "Staatliches", sans-serif;
             white-space: nowrap;
@@ -105,8 +106,56 @@
     }
 
 }
-
 .opened{
     transform: translateY(0%);
     transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+
+    .menu {
+
+        .ligne-colone {
+            div {
+                white-space: normal;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .menu {
+        .close-but {
+            margin: 40px 0 40px 40px;
+        }
+        .icon-social {
+            a {
+                margin: 40px 40px 40px 0;
+            }
+        }
+    }
+}   
+@media (max-width: 700px) {
+
+    .menu {
+        overflow:auto;
+        .icon-social {
+            display: none;
+            flex-direction: column;
+        }
+        .ligne-colone {
+            flex:1;
+
+            div {
+                width: 100%;
+                margin-bottom: 60px;
+                font-size: 25px;
+            }
+        }
+        &::after {
+            height: 200px;
+            width: 200px;
+            right: 0;
+        }
+    }
+
 }

@@ -25,3 +25,23 @@ nav{
         }
     }
 }
+
+@media (max-width: 550px) {
+    nav {
+        bottom: 0; top: unset;
+        left: 0; right: 0;
+        transform: none;
+        color: $noir;
+        justify-content:center;
+
+        .linksNav {
+            a {
+                color: $noir;
+            }
+        }
+
+        .button-menu {
+            transform: none;
+        }
+    }
+}

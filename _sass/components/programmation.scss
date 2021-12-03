@@ -220,7 +220,7 @@
             &::before {
                 height: 100px;
                 width: 123px;   
-            .row {
+            .prog-ligne {
                 margin: 0 30px 30px;
                 .card {
                     height: 120px;
@@ -231,9 +231,11 @@
                         .card-date {
                             font-size: 14px;
                         }
+                        .card-tarifs {
+                            display: none;
+                        }
                     }
                 }
-
                 &:nth-child(2) {
                     display: none;
                 }
@@ -245,7 +247,7 @@
 @media (max-width: 370px) {
     .section-programmation {
         .programmation {
-            .row {
+            .prog-ligne {
                 .card {
                     .card-text {
                         h6 {

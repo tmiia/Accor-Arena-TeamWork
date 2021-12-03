@@ -194,5 +194,44 @@ footer {
 
     }
 }
+@media (max-width: 650px) {
+    footer {
+        .footer-infos {
+            flex-direction: column;
+            margin: 30px auto 0;
+            width: 60%;
 
-  
+            h6 {
+                width: 100%;
+            }
+            .footer-section {
+                width: 100%;
+                margin: 60px auto 0;
+                &:nth-child(3) {
+                    margin-top: 60px;
+                }
+                &:nth-child(4) {
+                    margin-top: 60px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .footer-newsletter {
+            width: 60%;
+            margin: 0 auto 80px;
+            form {
+                flex-direction: column;
+                width: 100%;
+                input#newsletter {
+                    width: 100%;
+                }
+                #news-submit {
+                    margin-top: 40px;
+                    width: 120px;
+                }
+            }
+
+        }
+
+    }
+}

@@ -28,16 +28,17 @@ header{
     }
     .logo{
         top: 40px;
+        left: calc(50% - 50px);
         width: 100px;
         transition: 0.25s ease-in-out;
     }
     .scrolled{
         top: 20px;
+        left: calc(50% - 25px);
         width: 50px;
         transition: 0.25s ease-in-out;
     }
 }
-
 
 
 @media (max-width: 650px) {

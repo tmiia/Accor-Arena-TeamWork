@@ -26,13 +26,19 @@ nav{
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     nav {
         bottom: 0; top: unset;
         left: 0; right: 0;
         transform: none;
         color: $noir;
         justify-content:center;
+        background: $blanc;
+        z-index: 1000;
+
+        .button-menu {
+            margin: 5px;
+        }
 
         .linksNav {
             a {

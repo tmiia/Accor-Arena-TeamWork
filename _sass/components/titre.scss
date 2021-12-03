@@ -36,11 +36,17 @@ h3.right::after {
         margin: $margin-mobile $margin-desktop;
         flex-direction: column;
         align-items: flex-start;
+        position:relative;
     }
     h3::before {
         margin-right: 0 !important;
     }
     h3::after {
         margin-left: 0 !important;
+    }
+}
+@media (max-width: 600px) {
+    h3 {
+        margin: $margin-mobile;
     }
 }

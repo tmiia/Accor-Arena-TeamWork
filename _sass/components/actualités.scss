@@ -1,13 +1,13 @@
 .section-actualites {
 
-    h3::after {
+    h3::before {
         content: "";
         height: 4px;
         background-color: $noir;
         width: 120px;
-        margin-left: 60px;
+        margin-right: 60px;
         display: inline;
-    }
+      }
 
     .row {
 
@@ -118,5 +118,16 @@
         }
     }
 }
+
+@media (max-width: 650px) {
+    .section-actualites {
+        .row {
+            margin: 0 $margin-mobile $margin-mobile $margin-mobile;
+
+        }
+    }
+}
+
+
 
 

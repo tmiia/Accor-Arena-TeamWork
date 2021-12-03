@@ -177,3 +177,35 @@
     }
     
 }
+@media (max-width: 600px) {
+     .section-programmation {
+        .programmation {
+            padding-top: 60px;
+
+            .row {
+                margin: 0 $margin-mobile $margin-mobile;
+
+                .card {
+                    height: 160px;
+                    .card-text {
+                        margin-right: 20px;
+                        .card-date {
+                            font-size: 17px;
+                        }
+                        .card-heure {
+                            margin-bottom: 5px;
+                        }
+                        .card-tarifs {
+                            font-size: 13px;
+                        }
+                    }
+                    a {
+                        padding: 8px 15px;
+                        font-size: 18px;
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+    }
+}

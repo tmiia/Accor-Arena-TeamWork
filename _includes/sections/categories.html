@@ -1,15 +1,18 @@
-<div class="categories">
-    
-    {% include components/titre.html %}
+<section class="section-categories">
 
-    {% include components/tabs.html %}
+    {% include components/titre.html %}
     
-    {% for tabs in site.data.categories.categories_button.list_1  %}
-    <div id="{{tabs.type}}" class="tab-content">
-        <h6>{{tabs.type}}</h6>
-        <p>{{tabs.text}}</p>
-        {% assign button_text = tabs.type | prepend: "Découvrez tous nos événements " %}
-        {% include components/primary-button.html text=button_text  %}
+    <div class="categories">
+        
+        {% include components/tabs.html %}
+        
+        {% for tabs in site.data.categories.categories_button.list_1  %}
+        <div id="{{tabs.type}}" class="tab-content">
+            <h6>{{tabs.type}}</h6>
+            <p>{{tabs.text}}</p>
+            {% assign button_text = tabs.type | prepend: "Découvrez tous nos événements " %}
+            {% include components/primary-button.html text=button_text  %}
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
+</section>

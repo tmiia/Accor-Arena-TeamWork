@@ -235,3 +235,26 @@ footer {
 
     }
 }
+@media (max-width: 400px) {
+    footer {
+        .footer-infos {
+            margin: 30px 30px 0;
+            width: calc(100% - 60px);
+            .footer-section {
+                margin: 0 auto;
+            }
+        }
+        .footer-newsletter {
+            width: calc(100% - 60px);
+            margin: 0 30px 80px;
+        }
+        &::after {
+            height: 130px;
+            width: 158px;
+            transform: rotate(90deg) rotateY(180deg) rotateX(180deg);
+            top: 20%;
+            left: unset;
+            right: -14px;
+        }
+    }
+} 
